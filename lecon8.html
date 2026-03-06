@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 8 – Algorithmes Gloutons | Portfolio Algorithmique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="portfolio">
+    <div class="header">
+        <h1>📒 <span>portfolio évolutif</span> — algorithmique & complexité</h1>
+        <p>Leçon 8 · Algorithmes Gloutons · Stratégie</p>
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html" class="nav-link">← Accueil</a>
+        <a href="lecon7.html" class="nav-link">Leçon 7</a>
+        <a href="lecon8.html" class="nav-link active">🎯 Leçon 8</a>
+        <a href="bilan.html" class="nav-link">Bilan →</a>
+    </div>
+
+    <div class="content-pane">
+        <div class="card">
+            <div class="section-title"><i>📓</i> Journal réflexif</div>
+            <div class="reflexion-block">
+                « Les algorithmes gloutons (greedy) promettent des solutions rapides : à chaque étape, prendre le meilleur choix local. Ça paraît trop simple, et c'est souvent le cas ! J'ai découvert que ce n'est pas toujours optimal. Monnaie, intervalle scheduling : glouton fonctionne. Sac à dos : ne fonctionne pas. C'est l'observation du problème qui guide. »
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>🧠</i> Synthèse</div>
+            <div class="synthese">
+                <p>🎯 <strong>Algorithmes gloutons</strong> : construire la solution en effectuant à chaque étape le choix optimal local, espérant atteindre l'optimum global. <strong>Avantages</strong> : simples, O(n log n) souvent. <strong>Inconvénient</strong> : n'est pas toujours optimal. Exemples : rendu de monnaie, sélection d'activités, arbre couvrant minimum (Kruskal).</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>💼</i> Application</div>
+            <div class="appli">
+                🎯 J'ai optimisé un planificateur d'événements : avec un budget limité, sélectionner les activités qui maximisent la participation. Un algorithme glouton (trier par popularity/durée et sélectionner greedily) est performant. Ensuite, j'ai appliqué le même pattern à un problème de charge de serveur : glouton par charge actuelle. La simplicité était clé : production exigeait du rapide et compréhensible.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>🔍</i> Auto-évaluation</div>
+            <div class="meta-grid">
+                <div class="meta-item"><h4>✅ maîtrisé</h4> Implémenter algorithmes gloutons et identifier quand c'est optimal.</div>
+                <div class="meta-item"><h4>⚠️ à améliorer</h4> Prouver formellement quand glouton est optimal (matroïde, etc.)</div>
+                <div class="meta-item"><h4>📈 stratégie</h4> Comparer glouton vs DP sur plusieurs problèmes pour voir les limites et les cas optimaux.</div>
+            </div>
+        </div>
+
+        <div class="page-nav">
+            <a href="lecon7.html" class="prev">← Leçon 7 : Hachage</a>
+            <a href="index.html" class="back-home">Accueil</a>
+            <a href="bilan.html" class="next">Bilan Final →</a>
+        </div>
+    </div>
+
+    <footer>
+        ⚡ Leçon 8 / 8 · Algorithmes Gloutons · Stratégie
+    </footer>
+</div>
+</body>
+</html>

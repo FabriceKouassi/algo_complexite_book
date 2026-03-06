@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 7 – Tables de Hachage | Portfolio Algorithmique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="portfolio">
+    <div class="header">
+        <h1>📒 <span>portfolio évolutif</span> — algorithmique & complexité</h1>
+        <p>Leçon 7 · Tables de Hachage · O(1) moyen</p>
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html" class="nav-link">← Accueil</a>
+        <a href="lecon6.html" class="nav-link">Leçon 6</a>
+        <a href="lecon7.html" class="nav-link active">🔑 Leçon 7</a>
+        <a href="lecon8.html" class="nav-link">Leçon 8 →</a>
+    </div>
+
+    <div class="content-pane">
+        <div class="card">
+            <div class="section-title"><i>📓</i> Journal réflexif</div>
+            <div class="reflexion-block">
+                « Les tables de hachage semblaient trop simples au départ : appliquer une fonction de hachage et stocker. Puis j'ai découvert les collisions. Chaining vs open addressing : j'ai expérimenté les deux. Le timing m'a époustouflé : recherche O(1) en moyenne ! Étude des bonnes fonctions de hachage et du facteur de charge m'a montré combien de détails il y a. »
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>🧠</i> Synthèse</div>
+            <div class="synthese">
+                <p><span class="keyword">Table de hachage</span> : hash(clé) → index dans tableau. <span class="keyword">Collision</span> : deux clés différentes → même index. <strong>Chaining</strong> : liste à chaque index. <strong>Open addressing</strong> : trouver un autre index libre. O(1) en moyenne, O(n) au pire. Facteur de charge : ratio taille/capacité.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>💼</i> Application</div>
+            <div class="appli">
+                🔑 Dans mon système de cache, je devais stocker des sessions utilisateur (clé: ID, valeur: données). Avec une table de hachage, les recherches sont quasi instantanées. J'ai aussi dû gérer l'expiration (éviction LRU) et la rehachage quand la table se remplit : ces détails m'ont forcé à comprendre les vraies implications du hachage.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>🔍</i> Auto-évaluation</div>
+            <div class="meta-grid">
+                <div class="meta-item"><h4>✅ maîtrisé</h4> Comprendre le hachage, chaining, impacts du facteur de charge.</div>
+                <div class="meta-item"><h4>⚠️ à améliorer</h4> Écrire une bonne fonction de hachage, gérer rehachage, open addressing complexe.</div>
+                <div class="meta-item"><h4>📈 stratégie</h4> Implémenter une table de hachage simple avec chaining et mesurer les distributions.</div>
+            </div>
+        </div>
+
+        <div class="page-nav">
+            <a href="lecon6.html" class="prev">← Leçon 6 : DP</a>
+            <a href="index.html" class="back-home">Accueil</a>
+            <a href="lecon8.html" class="next">Leçon 8 : Gloutons →</a>
+        </div>
+    </div>
+
+    <footer>
+        ⚡ Leçon 7 / 8 · Tables de Hachage · O(1) moyen
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilan Final | Portfolio Algorithmique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="portfolio">
+    <div class="header">
+        <h1>📒 <span>portfolio évolutif</span> — algorithmique & complexité</h1>
+        <p>Bilan Final · 8 Leçons · Synthèse & Réflexion</p>
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html" class="nav-link">← Accueil</a>
+        <a href="lecon8.html" class="nav-link">Leçon 8</a>
+        <a href="bilan.html" class="nav-link active">📌 Bilan Final</a>
+    </div>
+
+    <div class="content-pane">
+        <div style="background: linear-gradient(135deg, #f8fafb 0%, #f3f6f9 100%); border-radius: 20px; padding: 2rem 2.5rem;">
+            <h2 style="font-size: 2.3rem; font-weight: 700; color: #1a3a52; margin-bottom: 2.2rem; border-left: 5px solid #4faafe; padding-left: 1.5rem;">📌 Bilan final – 8 leçons d'algorithmique & complexité</h2>
+
+            <div class="bilan-question">
+                <strong>📘 1. Ce que j'ai le plus appris dans ce cours</strong>
+                <p>L'analyse de complexité est devenue un réflexe : avant d'écrire une boucle, j'estime son coût. J'ai appris 8 thèmes interconnectés (Big O → structures → tris → graphes → DP). Le grand apprentissage : il y a rarement une seule bonne réponse. Le choix entre approches glouton vs DP vs structures optimales dépend du contexte. La compétence clé est de raisonner sur les compromis.</p>
+            </div>
+
+            <div class="bilan-question">
+                <strong>🎯 2. Synthèse progressive des 8 leçons</strong>
+                <p><strong>Leçons 1-3</strong> (analyse & tris) : les fondations. Estimer la complexité, comparer O(n²) vs O(n log n), choisir le bon tri.<br>
+                <strong>Leçon 4</strong> (structures) : le vocabulaire. Quand utiliser un tableau, une liste, un arbre ? Impact direct sur la complexité.<br>
+                <strong>Leçon 5</strong> (graphes) : modéliser et parcourir. BFS/DFS, cycle, connectivité.<br>
+                <strong>Leçon 6</strong> (DP) : l'optimisation. Reconnaître sous-structure & chevauchement, transforming exponentiel → polynomial.<br>
+                <strong>Leçon 7</strong> (hachage) : recherche O(1) concrètement. Collision, facteur de charge, réalité d'implémentation.<br>
+                <strong>Leçon 8</strong> (glouton) : quand les raccourcis fonctionnent. Local → global, avec rigueur.</p>
+            </div>
+
+            <div class="bilan-question">
+                <strong>🛠️ 3. Compétences réutilisables ailleurs</strong>
+                <p>• Conception d'algorithmes efficaces (diviser pour régner, DP, glouton).<br>
+                • Choix de structures adaptées (tableau, liste, arbre, graphe, table de hachage).<br>
+                • Preuve informelle par induction et invariant boucle.<br>
+                • Optimisation de code existant (profilage → bottleneck → réarchitecture).<br>
+                • Communication : expliquer la complexité à des collègues, justifier la structure choisie.<br>
+                • Déboguer des problèmes d'allocation (memoria vs temps) en production.</p>
+            </div>
+
+            <div class="bilan-question">
+                <strong>⚡ 4. Défis et breakthroughs</strong>
+                <p><strong>Défi initial</strong> : la récursivité et l'induction restaient abstraites, puis visualiser la pile d'appels a tout changé.<br>
+                <strong>Défi du milieu</strong> : passer de "ça marche" à "c'est optimal". Fibonacci naïf → DP : O(2^n) → O(n), moment révélateur.<br>
+                <strong>Défi final</strong> : savoir quand hachage vs recherche binaire, glouton vs DP. La réponse : implémenter les deux, mesurer, décider selon le contexte.</p>
+            </div>
+
+            <div class="bilan-question">
+                <strong>🚀 5. Suite logique de l'apprentissage</strong>
+                <p>• Graphes avancés : Dijkstra, Bellman-Ford, A*, flux de réseau.<br>
+                • Complexité amortie et structures avancées (Union-Find, Treaps, B-trees).<br>
+                • Algorithmes parallèles et distribuées (MapReduce, sharding).<br>
+                • Challenges pratiques : Codeforces, LeetCode, hackathons. L'automatisation des réflexes passe par la pratique régulière.<br>
+                • Mesure en production : les algorithmes sur papier rencontrent cache, I/O, concurrence. Profiler réellement !</p>
+            </div>
+
+            <div class="bilan-question">
+                <strong>💡 6. Réflexion personnelle finale</strong>
+                <p>Ce cours m'a changé ma manière de coder. Avant : "si ça marche, c'est bon". Après : "est-ce optimal ? Peut-on faire mieux ?" J'ai réalisé que la plupart des applications "lentes" ne sont pas des bugs, mais des mauvais choix d'algo ou de structure. La bonne nouvelle : on peut toujours apprendre à mieux choisir. Le chemin : rigueur, expérimentation, pratique. Le but : cultiver l'intuition algorithmique.</p>
+            </div>
+        </div>
+
+        <div class="page-nav" style="margin-top: 2rem;">
+            <a href="lecon8.html" class="prev">← Leçon 8 : Gloutons</a>
+            <a href="index.html" class="back-home">Retour à l'accueil</a>
+        </div>
+    </div>
+
+    <footer>
+        ⚡ Bilan Final · 8 leçons · Complexité, Structures, Graphes, DP, Hachage, Gloutons
+    </footer>
+</div>
+</body>
+</html>
