@@ -22,8 +22,99 @@
 
     <div class="content-pane">
         <div class="card">
-            <div class="reflexion-block-not-learned">
-                Ce cours n'est pas encore étudié avec le docteur.
+            <div class="section-title"><i>📓</i> Journal d'apprentissage réflexif</div>
+            <div class="reflexion-block">
+                
+                Cette semaine, 
+                <ul>
+                    <li>
+                        J'ai révisé les connaissances des structures linéaires en particulier les tableaux, listes chaînées
+                    </li>
+                    <li>
+                        J'ai appris à décrire les différents composants d’une table de hachage (fonction de hachage, table, collisions, etc.)
+                    </li>
+                    <li>J'ai appris à choisir une fonction de hachage appropriée pour un problème donné</li>
+                    <li>J'ai appris à gérer les collisions dans les tables de hachage</li>
+                    <li>J'ai appris à analyser la complexité temporelle des opérations sur les tables de hachage</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>🧠</i> Synthèse personnelle</div>
+            <div class="synthese">
+                <ul>
+                    <li>
+                        <p>
+                            Les tables de hachage sont des structures de données qui permettent de stocker et de récupérer des données de manière efficace en utilisant une fonction de hachage pour transformer les clés en indices dans une table. Les fonctions de hachage sont conçues pour minimiser les collisions, où deux clés différentes produisent le même indice. Cependant, les collisions sont inévitables, et il existe plusieurs méthodes pour les gérer, telles que le chaînage (où chaque indice de la table contient une liste de paires clé-valeur) et le sondage linéaire (où l'on cherche le prochain indice disponible). La complexité temporelle des opérations sur les tables de hachage est généralement O(1) pour l'insertion, la suppression et la recherche, mais peut devenir O(n) dans le pire des cas en raison des collisions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Le choix d'une fonction de hachage appropriée est crucial pour les performances d'une table de hachage. Une bonne fonction de hachage doit être rapide à calculer, distribuer les clés de manière uniforme dans la table, et minimiser les collisions. Par exemple, pour les chaînes de caractères, une fonction de hachage courante est la fonction de hachage de djb2, qui utilise une combinaison de multiplication et d'addition pour générer un indice à partir des caractères de la chaîne. Pour les nombres entiers, une fonction de hachage simple peut être le reste de la division par la taille de la table. En choisissant une fonction de hachage appropriée, on peut améliorer considérablement les performances d'une table de hachage et réduire le nombre de collisions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            La gestion des collisions dans les tables de hachage est essentielle pour maintenir des performances efficaces. Le chaînage est une méthode courante où chaque indice de la table contient une liste de paires clé-valeur, ce qui permet de gérer les collisions en stockant plusieurs éléments à la même position. Le sondage linéaire, en revanche, cherche le prochain indice disponible dans la table lorsque une collision se produit, ce qui peut entraîner des problèmes de clustering (où les éléments se regroupent et augmentent les temps de recherche). D'autres méthodes de gestion des collisions incluent le sondage quadratique et le double hachage, qui cherchent des indices alternatifs pour éviter le clustering. En choisissant une méthode de gestion des collisions appropriée, on peut améliorer les performances d'une table de hachage même en cas de nombreuses collisions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            L'analyse de la complexité temporelle des opérations sur les tables de hachage est importante pour comprendre leurs performances dans différents scénarios. En général, les opérations d'insertion, de suppression et de recherche ont une complexité temporelle moyenne de O(1) lorsque la fonction de hachage distribue les clés de manière uniforme et que le taux de charge (le nombre d'éléments par rapport à la taille de la table) est faible. Cependant, dans le pire des cas, lorsque toutes les clés produisent des collisions, la complexité peut devenir O(n), car il faut parcourir tous les éléments à un indice donné. Pour éviter cela, il est important de choisir une fonction de hachage appropriée et de maintenir un taux de charge raisonnable en redimensionnant la table lorsque nécessaire.
+                        </p>
+                    </li>                    
+                    <li>
+                        <p>
+                            En résumé, les tables de hachage sont des structures de données puissantes pour stocker et récupérer des données de manière efficace, mais leur performance dépend fortement du choix de la fonction de hachage et de la gestion des collisions. En comprenant ces concepts, on peut optimiser l'utilisation des tables de hachage dans divers contextes, tels que les bases de données, les caches, et les systèmes de fichiers.
+                        </p>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>💼</i> Application pratique</div>
+            <div class="appli">
+                <!-- Expliquez comment vous pourriez appliquer ces concepts à un problème réel de vos études, de votre vie professionnelle ou de votre quotidien. -->
+                <P>
+                    Ces concepts sont essentiels pour optimiser les performances de mes programmes et résoudre efficacement des problèmes complexes. Par exemple, dans un projet de développement d'une application de gestion de tâches, je pourrais utiliser une file de priorité implémentée avec un tas pour organiser les tâches en fonction de leur importance ou de leur échéance, assurant ainsi une gestion efficace des ressources. De plus, comprendre les tables de hachage m'aidera à implémenter des fonctionnalités telles que la recherche rapide dans les bases de données, améliorant ainsi l'expérience utilisateur de mon application.
+                </P>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title"><i>🔍</i> Auto-évaluation / méta-cognition</div>
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h4>✅ maîtrisé</h4> 
+                    <p>
+                        <ul>
+                            <li>Notion de tables de hachage</li>
+                            <li>Fonction de hachage</li>
+                            <!-- <li>Gestion des collisions</li> -->
+                            <li>Complexité temporelle des opérations sur les tables de hachage</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="meta-item">
+                    <h4>⚠️ à améliorer</h4> 
+                    <p>
+                        <ul>
+                            <li>Comprendre les différences de performance entre différentes fonctions de hachage dans différents scénarios</li>
+                            <li>Pratiquer l'implémentation de différentes méthodes de gestion des collisions pour renforcer ma compréhension</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="meta-item">
+                    <h4>📈 stratégie</h4>
+                    <p>
+                        <ul>
+                            <li>Analyser les performances de différentes fonctions de hachage en fonction des besoins spécifiques de mes projets</li>
+                            <li>Implémenter et tester différentes méthodes de gestion des collisions pour mieux comprendre leurs caractéristiques et leurs performances</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
 
