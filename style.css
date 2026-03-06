@@ -212,22 +212,31 @@ body {
 }
 
 /* Blocs de contenu */
-.reflexion-block {
-    background: linear-gradient(135deg, #f0f8ff 0%, #e8f4ff 100%);
+.reflexion-block, .reflexion-block-not-learned {
     padding: 1.6rem 2.2rem;
     border-radius: 16px;
-    border-left: 5px solid #4faafe;
     font-style: italic;
-    color: #1a3a52;
     box-shadow: 0 4px 12px rgba(79, 170, 254, 0.08);
     line-height: 1.7;
     font-size: 1.02rem;
     transition: all 0.3s ease;
 }
 
-.reflexion-block:hover {
+.reflexion-block:hover, .reflexion-block-not-learned:hover {
     box-shadow: 0 8px 20px rgba(79, 170, 254, 0.12);
     transform: translateY(-2px);
+}
+
+.reflexion-block {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e8f4ff 100%);
+    border-left: 5px solid #4faafe;
+    color: #1a3a52;
+}
+
+.reflexion-block-not-learned {
+    background: linear-gradient(135deg, #fff0f0 0%, #ffe8e9 100%);
+    border-left: 5px solid #fe4f4f;
+    color: #521a1a;
 }
 
 .synthese {
